@@ -10,7 +10,7 @@ int main(){
     printf("BLUE  = %d\n", BLUE);
 
     printf("OK    = %d\n", OK);
-    printf("ERR = %d\n", ERR);
+    printf("ERR   = %d\n", ERR);
     printf("BUSY  = %d\n", BUSY);
     return 0;
 }
