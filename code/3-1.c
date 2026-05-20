@@ -12,7 +12,7 @@ int compute(int a, int b, BinOp op){
         return -1;
     }
     else{
-        return op(a,b);
+        op(a,b);
     }
 }
 
