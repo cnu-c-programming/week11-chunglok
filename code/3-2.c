@@ -9,7 +9,7 @@ int cmp_desc(const void *a, const void *b){
     return (*(const int*)b - *(const int*)a);
 }
 
-int print_arr(int *arr, int size){
+void print_arr(int *arr, int size){
     for(int i = 0; i < size; i++){
         printf("%d ", arr[i]);
     }
