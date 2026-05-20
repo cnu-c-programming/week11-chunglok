@@ -6,12 +6,12 @@ int add(int a, int b){ return a + b; }
 int sub(int a, int b){ return a - b; }
 int mul(int a, int b){ return a * b; }
 
-int compute(int a, int b, void* func){
-    if(func == "add") return add(a, b);
-    else if(func == "sub") return sub(a, b);
-    else if(func == "mul") return mul(a, b);
-    else if(func == NULL) 
-        printf("Null pointer\n"); return -1;
+int compute(int a, int b, BinOp op){
+    op(a, b);
+    if(func == NULL){
+        printf("Null pointer\n");
+        return -1;
+    }
 }
 
 int main(){
